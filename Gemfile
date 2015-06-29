@@ -31,7 +31,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
  gem 'devise'
  gem 'omniauth'
  gem 'omniauth-digitalocean'
- gem  'omniauth-google'
+ gem 'omniauth-google'
 
 # Github - omniauth-github
 
@@ -41,6 +41,9 @@ gem 'rspec-context-private', '0.0.1'
 gem 'rspec-html-matchers', '0.6.1'
 
 
+
+gem 'bootstrap-sass', '~> 3.2.0'
+gem 'autoprefixer-rails'
 
 # Use Unicorn as the app server
 # gem 'unicorn'

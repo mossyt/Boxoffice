@@ -1,7 +1,12 @@
+<%= form_tag(movies_path, :method => "get", id: "search-form") do %>
+<%= text_field_tag :search, params[:search], placeholder: "Search Movies" %>
+<%= submit_tag "Search" %>
+<% end %>
+
 <div class="hero">
   <div class="container">
-    <h2>Interstellar</h2>
-    <p>Former NASA pilot Cooper (Matthew McConaughey) and a team of researchers travel across the galaxy to find out which of three planets could be mankind's new home.</p>
+    <h2>Avatar</h2>
+    <p>A Paraplegic Marine dispatched to the moon Pandora on a unique mission becomes torn between following his orders and protecting the world he feels is his home</p>
     <a href="#">Read More</a>
   </div>
 </div>
@@ -11,7 +16,7 @@
   <h2>Popular Films</h2>
     <% @movies.each do |movie| %>
     <div class="movie">
-      <%= image_tag movie.image %>
+      <%= image_tag movie.image%> 
       <h3><%= movie.movie_title %></h3>
       <p><%= movie.release_year %></p>
       <p><%= movie.synopsis %></p>
